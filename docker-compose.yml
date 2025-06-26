@@ -5,7 +5,7 @@ services:
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./public:/opt/app
+      - ./public:/var/www/html
     environment:
       VIRTUAL_HOST: "controlinmobiliario.cl"
       LETSENCRYPT_HOST: "controlinmobiliario.cl"
